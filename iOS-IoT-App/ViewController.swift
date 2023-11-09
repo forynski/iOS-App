@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     var dataEntriesX: [ChartDataEntry] = []
     var dataEntriesY: [ChartDataEntry] = []
     var dataEntriesZ: [ChartDataEntry] = []
+    var dataEntriesVibration: [ChartDataEntry] = []  // New array for vibration data
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,9 +44,12 @@ class ViewController: UIViewController {
                     let x = accelerometerData.acceleration.x
                     let y = accelerometerData.acceleration.y
                     let z = accelerometerData.acceleration.z
+                    
+                    // Calculate vibration level (hypothetical formula, adjust as needed)
+                    let vibrationLevel = sqrt(x * x + y * y + z * z)
 
                     // Update the chart with new data
-                    self.addEntry(x: x, y: y, z: z)
+                    self.addEntry(x: x, y: y, z: z, vibration: vibrationLevel)
                 }
             }
         } else {
@@ -54,16 +58,18 @@ class ViewController: UIViewController {
     }
 
     // Function to add real-time data capture to the chart
-    func addEntry(x: Double, y: Double, z: Double) {
+    func addEntry(x: Double, y: Double, z: Double, vibration: Double) {
         dataEntriesX.append(ChartDataEntry(x: Double(dataEntriesX.count), y: x))
         dataEntriesY.append(ChartDataEntry(x: Double(dataEntriesY.count), y: y))
         dataEntriesZ.append(ChartDataEntry(x: Double(dataEntriesZ.count), y: z))
+        dataEntriesVibration.append(ChartDataEntry(x: Double(dataEntriesVibration.count), y: vibration))  // Add vibration data
         
         let dataSetX = LineChartDataSet(entries: dataEntriesX, label: "X-Axis Data")
         let dataSetY = LineChartDataSet(entries: dataEntriesY, label: "Y-Axis Data")
         let dataSetZ = LineChartDataSet(entries: dataEntriesZ, label: "Z-Axis Data")
+        let dataSetVibration = LineChartDataSet(entries: dataEntriesVibration, label: "Vibration Level")  // Add vibration data set
         
-        let data = LineChartData(dataSets: [dataSetX, dataSetY, dataSetZ])
+        let data = LineChartData(dataSets: [dataSetX, dataSetY, dataSetZ, dataSetVibration])  // Include vibration data set
         chartView.data = data
         chartView.notifyDataSetChanged()
     }
