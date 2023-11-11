@@ -69,6 +69,18 @@ class ViewController: UIViewController {
         let dataSetZ = LineChartDataSet(entries: dataEntriesZ, label: "Z-Axis Data")
         let dataSetVibration = LineChartDataSet(entries: dataEntriesVibration, label: "Vibration Level")  // Add vibration data set
         
+        // Set colors for each dataset
+        dataSetX.colors = [NSUIColor.red]  // Set color for X-Axis Data
+        dataSetY.colors = [NSUIColor.blue]  // Set color for Y-Axis Data
+        dataSetZ.colors = [NSUIColor.green]  // Set color for Z-Axis Data
+        dataSetVibration.colors = [NSUIColor.purple]  // Set color for Vibration Level
+        
+        // Set drawCirclesEnabled to false to hide dots on the chart
+        dataSetX.drawCirclesEnabled = false
+        dataSetY.drawCirclesEnabled = false
+        dataSetZ.drawCirclesEnabled = false
+        dataSetVibration.drawCirclesEnabled = false
+        
         let data = LineChartData(dataSets: [dataSetX, dataSetY, dataSetZ, dataSetVibration])  // Include vibration data set
         chartView.data = data
         chartView.notifyDataSetChanged()

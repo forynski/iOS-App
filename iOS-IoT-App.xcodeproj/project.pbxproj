@@ -18,10 +18,8 @@
 		C8D2BF1F03A55EB503A9F56F /* iOS_IoT_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B69256373132B6DAE5D5 /* iOS_IoT_AppUITests.swift */; };
 		E17A18D72AF7D26300DFFA17 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E17A18D62AF7D26300DFFA17 /* DGCharts */; };
 		E17A18D92AF7D26300DFFA17 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E17A18D82AF7D26300DFFA17 /* DGChartsDynamic */; };
-		E17A18DD2AF7D4B300DFFA17 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17A18DC2AF7D4B300DFFA17 /* Charts.framework */; };
+		E17DAA262AFFFA2D00AA82DE /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E17DAA252AFFFA2D00AA82DE /* DGCharts */; };
 		E1EE80132AF7C354000DF6CA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EE80122AF7C354000DF6CA /* CoreMotion.framework */; };
-		E1EE80182AF7C68F000DF6CA /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E1EE80172AF7C68F000DF6CA /* DGCharts */; };
-		E1EE801A2AF7C68F000DF6CA /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E1EE80192AF7C68F000DF6CA /* DGChartsDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,9 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E17A18DD2AF7D4B300DFFA17 /* Charts.framework in Frameworks */,
-				E1EE80182AF7C68F000DF6CA /* DGCharts in Frameworks */,
-				E1EE801A2AF7C68F000DF6CA /* DGChartsDynamic in Frameworks */,
+				E17DAA262AFFFA2D00AA82DE /* DGCharts in Frameworks */,
 				E1EE80132AF7C354000DF6CA /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,8 +204,7 @@
 			);
 			name = "iOS-IoT-App";
 			packageProductDependencies = (
-				E1EE80172AF7C68F000DF6CA /* DGCharts */,
-				E1EE80192AF7C68F000DF6CA /* DGChartsDynamic */,
+				E17DAA252AFFFA2D00AA82DE /* DGCharts */,
 			);
 			productName = "iOS-IoT-App";
 			productReference = C8D2B4D5F97174FC2E2969B8 /* iOS-IoT-App.app */;
@@ -637,15 +632,10 @@
 			package = E1EE80162AF7C68F000DF6CA /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = DGChartsDynamic;
 		};
-		E1EE80172AF7C68F000DF6CA /* DGCharts */ = {
+		E17DAA252AFFFA2D00AA82DE /* DGCharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E1EE80162AF7C68F000DF6CA /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = DGCharts;
-		};
-		E1EE80192AF7C68F000DF6CA /* DGChartsDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E1EE80162AF7C68F000DF6CA /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = DGChartsDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
