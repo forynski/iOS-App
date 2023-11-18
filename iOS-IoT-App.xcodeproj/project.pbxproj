@@ -16,6 +16,7 @@
 		C8D2BC582998142F04101FE6 /* iOS_IoT_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B9BFB92EE05858545C44 /* iOS_IoT_AppTests.swift */; };
 		C8D2BD3B189694FE6181E82B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B4BF0AF3A8B86C204B35 /* SceneDelegate.swift */; };
 		C8D2BF1F03A55EB503A9F56F /* iOS_IoT_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B69256373132B6DAE5D5 /* iOS_IoT_AppUITests.swift */; };
+		E15B9E412B08D4B500EC11A8 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = E15B9E402B08D4B500EC11A8 /* Config.plist */; };
 		E17A18D72AF7D26300DFFA17 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E17A18D62AF7D26300DFFA17 /* DGCharts */; };
 		E17A18D92AF7D26300DFFA17 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E17A18D82AF7D26300DFFA17 /* DGChartsDynamic */; };
 		E17DAA262AFFFA2D00AA82DE /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E17DAA252AFFFA2D00AA82DE /* DGCharts */; };
@@ -53,6 +54,7 @@
 		C8D2BDFE51AEB995B0AF9D26 /* iOS_IoT_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_IoT_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C8D2BEBBF187F8E1CDDBF309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8D2BF3F03292739838A5FD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E15B9E402B08D4B500EC11A8 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		E17A18DC2AF7D4B300DFFA17 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
 		E1EE80122AF7C354000DF6CA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				C8D2BEBBF187F8E1CDDBF309 /* Assets.xcassets */,
 				C8D2BBA5BADA2D5FC63F38D9 /* AppDelegate.swift */,
 				C8D2B53E8ED4575F2717ADB1 /* LaunchScreen.storyboard */,
+				E15B9E402B08D4B500EC11A8 /* Config.plist */,
 				C8D2B2C3520A83B36D2B1FAD /* Info.plist */,
 				C8D2B4BF0AF3A8B86C204B35 /* SceneDelegate.swift */,
 				C8D2BF3F03292739838A5FD7 /* ViewController.swift */,
@@ -247,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15B9E412B08D4B500EC11A8 /* Config.plist in Resources */,
 				C8D2BA452695EDAD894D7406 /* Assets.xcassets in Resources */,
 				C8D2B5113EEACB6F6EC7F1D1 /* LaunchScreen.storyboard in Resources */,
 				C8D2BBC9E539C0AB39D9A6ED /* Main.storyboard in Resources */,

@@ -21,17 +21,17 @@ class ViewController: UIViewController {
    let deviceId = "iPhone"
 //    let sharedAccessKey = "<your_key>"
    var sharedAccessKey: String?
-
+    
 
    override func viewDidLoad() {
        super.viewDidLoad()
        
-   // Read the secret key from Keys.plist
-   if let path = Bundle.main.path(forResource: "Keys", ofType: "plist"),
+   // Read the secret key from Config.plist
+   if let path = Bundle.main.path(forResource: "Config", ofType: "plist"),
               let keys = NSDictionary(contentsOfFile: path) {
                sharedAccessKey = keys["SharedAccessKey"] as? String
           }
-
+       
        setupChart(accelerometerChartView, title: "Accelerometer Data")
        setupChart(gyroChartView, title: "Gyroscope Data")
        setupChart(vibrationChartView, title: "Vibration Data")
