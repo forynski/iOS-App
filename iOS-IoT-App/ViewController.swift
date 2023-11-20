@@ -162,7 +162,7 @@ class ViewController: UIViewController {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         // Generate SAS token and set it in the Authorization header
-        if let sasToken = generateSasToken(uri: url, keyName: "service", key: sharedAccessKey ?? "") {
+        if let sasToken = generateSasToken(uri: url, keyName: "DevicePolicy", key: sharedAccessKey ?? "") {
             request.setValue(sasToken, forHTTPHeaderField: "Authorization")
             
             do {
