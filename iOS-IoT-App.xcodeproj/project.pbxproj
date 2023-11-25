@@ -54,6 +54,7 @@
 		C8D2BDFE51AEB995B0AF9D26 /* iOS_IoT_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_IoT_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C8D2BEBBF187F8E1CDDBF309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8D2BF3F03292739838A5FD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1099D632B10A7A900AB7D3D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E15B9E402B08D4B500EC11A8 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		E17A18DC2AF7D4B300DFFA17 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
 		E1EE80122AF7C354000DF6CA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -133,6 +134,7 @@
 		C8D2BFDF4B6C2F471561AF34 = {
 			isa = PBXGroup;
 			children = (
+				E1099D632B10A7A900AB7D3D /* README.md */,
 				C8D2B7710154D19DC4F512FC /* Products */,
 				C8D2B1BFF562019142A5E386 /* iOS-IoT-App */,
 				C8D2B0A00EFD1C35C9AA2B30 /* iOS-IoT-AppTests */,
