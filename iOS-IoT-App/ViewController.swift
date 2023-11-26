@@ -140,7 +140,7 @@ class ViewController: UIViewController {
 
     func sendTelemetryToNodeJs(data: [String: Double]) {
         // Replace with the actual URL of your Node.js server
-        guard let url = URL(string: "https://nodejstoazure.azurewebsites.net/sendData") else {
+        guard let url = URL(string: "https://nodejstoazureiot.azurewebsites.net:3000/sendData") else {
             print("Invalid URL")
             return
         }
